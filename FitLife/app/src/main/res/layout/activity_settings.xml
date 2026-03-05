@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_neon_gradient">
+
+    <!-- SETTINGS CARD -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#1E2F36"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#EAF6FA"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- DARK MODE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Dark Mode"
+                    android:textSize="16sp"
+                    android:textColor="#EAF6FA"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchDarkMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:useMaterialThemeColors="true"/>
+            </LinearLayout>
+
+            <!-- NOTIFICATIONS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Notifications"
+                    android:textSize="16sp"
+                    android:textColor="#EAF6FA"/>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchNotifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:useMaterialThemeColors="true"/>
+            </LinearLayout>
+
+            <!-- DIVIDER -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="#334B52"/>
+
+            <!-- PRIVACY -->
+            <!-- ================= PRIVACY & PERMISSIONS ================= -->
+
+            <TextView
+                android:id="@+id/tvPrivacyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy and Permissions"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#9FBAC3"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="20dp" />
+
+            <!-- Data Usage -->
+            <LinearLayout
+                android:id="@+id/btnDataUsage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data Usage"
+                    android:textSize="16sp"
+                    android:textColor="#EAF6FA" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How your fitness data is stored"
+                    android:textSize="13sp"
+                    android:textColor="#9FBAC3" />
+            </LinearLayout>
+
+            <!-- App Permissions -->
+            <LinearLayout
+                android:id="@+id/btnAppPermissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App Permissions"
+                    android:textSize="16sp"
+                    android:textColor="#EAF6FA" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location, notifications, storage"
+                    android:textSize="13sp"
+                    android:textColor="#9FBAC3" />
+            </LinearLayout>
+
+            <!-- Clear App Data -->
+            <LinearLayout
+                android:id="@+id/btnClearData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear App Data"
+                    android:textSize="16sp"
+                    android:textColor="#FF6B6B" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove all saved routines and progress"
+                    android:textSize="13sp"
+                    android:textColor="#9FBAC3" />
+            </LinearLayout>
+
+            <!-- Privacy Policy -->
+            <LinearLayout
+                android:id="@+id/btnPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textSize="16sp"
+                    android:textColor="#EAF6FA" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read how your privacy is protected"
+                    android:textSize="13sp"
+                    android:textColor="#9FBAC3" />
+            </LinearLayout>
+
+            <!-- Session Info -->
+            <LinearLayout
+                android:id="@+id/btnSessionInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Session and Security"
+                    android:textSize="16sp"
+                    android:textColor="#EAF6FA" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You are logged in securely on this device"
+                    android:textSize="13sp"
+                    android:textColor="#9FBAC3" />
+            </LinearLayout>
+
+
+            <!-- ABOUT -->
+            <TextView
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="About App"
+                android:textColor="#EAF6FA"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:background="?attr/selectableItemBackground"/>
+
+            <!-- LOGOUT -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Logout"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="#D32F2F"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

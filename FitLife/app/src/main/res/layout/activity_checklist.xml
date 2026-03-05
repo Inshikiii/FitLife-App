@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_neon_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:text="Daily Checklist"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#EAF6FA"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Small habits, big results"
+                android:textColor="#9BB8C0"
+                android:layout_marginBottom="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- CARD -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_round"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 🔥 DYNAMIC CHECKLIST CONTAINER -->
+                <LinearLayout
+                    android:id="@+id/checklistContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/btnDelegateSms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delegate Checklist via SMS"/>
+
+
+            </LinearLayout>
+
+            <!-- PROGRESS -->
+            <TextView
+                android:id="@+id/tvChecklistProgress"
+                android:text="Completed 0 / 0 today"
+                android:textColor="#00E5FF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ➕ ADD CHECKLIST BUTTON -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddChecklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add Checklist Item"
+        app:backgroundTint="#2196F3"
+        app:tint="#FFFFFF"
+        app:elevation="8dp" />
+
+
+
+
+</FrameLayout>

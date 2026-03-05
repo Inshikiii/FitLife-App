@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_neon_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- PAGE TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Up Your Fitness"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#EAF6FA"
+            android:layout_marginBottom="24dp" />
+
+        <!-- CARD CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card_round"
+            android:padding="24dp">
+
+            <!-- AGE -->
+            <EditText
+                android:id="@+id/etAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#9BB8C0"
+                android:backgroundTint="#00E5FF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- WEIGHT -->
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weight (kg)"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#9BB8C0"
+                android:backgroundTint="#00E5FF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <!-- HEIGHT -->
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Height (cm)"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#9BB8C0"
+                android:backgroundTint="#00E5FF" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+            <!-- GOAL -->
+            <Spinner
+                android:id="@+id/spGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="#1C3B45" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <!-- SAVE BUTTON -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Save &amp; Continue"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:backgroundTint="#00E5FF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

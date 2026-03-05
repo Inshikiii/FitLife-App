@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand colors -->
+    <color name="navy_blue">#0B1E3B</color>
+    <color name="light_blue">#64B5F6</color>
+    <color name="accent_blue">#1E88E5</color>
+
+    <!-- Status -->
+    <color name="error_red">#E53935</color>
+
+    <!-- Basics -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

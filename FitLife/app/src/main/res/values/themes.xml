@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SAME theme name, required for dark mode lookup -->
+    <style name="Theme.FitLife"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Reuse existing colors, no UI change -->
+        <item name="colorPrimary">@color/navy_blue</item>
+        <item name="colorPrimaryVariant">@color/navy_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/light_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor">@color/navy_blue</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+    </style>
+
+</resources>

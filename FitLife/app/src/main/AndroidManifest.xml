@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitlife">
+
+    <!-- ===== PERMISSIONS ===== -->
+    <uses-permission
+        android:name="android.permission.ACTIVITY_RECOGNITION"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".FitLifeApp"
+        android:icon="@mipmap/ic_applogo"
+        android:roundIcon="@mipmap/ic_applogo_round"
+        android:allowBackup="true"
+        android:label="FitLife"
+        android:theme="@style/Theme.FitLife">
+
+
+
+        <!-- ===== GOOGLE MAPS API KEY ===== -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCcJ20XstOnPGipY5DTNKW7l2WUXE2OlpU" />
+
+        <!-- ===== SPLASH / LAUNCHER ===== -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- ===== AUTHENTICATION ===== -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+
+
+        <!-- ===== FITNESS FLOW ===== -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".FitnessSetupActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DailyRoutineActivity"
+            android:exported="false" />
+
+        <!-- ===== BOTTOM NAV PAGES ===== -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChecklistActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CreateRoutineActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DelegateSmsActivity"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>
